@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.baris.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="1. Wat kan je allemaal eten?"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_metaal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Metaal"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_vis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Vis"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_vlees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Vlees"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="2. Wat is de hoofstad van Nederland?"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_almere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Almere"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_amsterdam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Amsterdam"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_denHaag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Den Haag"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="3. Waar staat ROC voor?"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/ROC_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type hier je antwoord"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="4. Welke dieren zijn zoogdieren? "
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_beer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Beer"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_gorilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Gorilla"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_schildpad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Schildpad"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_slang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Slang"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="onButtonClicked"
+            android:text="Antwoord" />
+
+        <TextView
+            android:id="@+id/antwoord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+</ScrollView>
